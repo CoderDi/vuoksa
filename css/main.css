@@ -1,8 +1,8 @@
-@import url('fonts.css');
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,700|Open+Sans:300,400,600,700&display=swap&subset=cyrillic');
 @import url('normalize.css');
 
 * {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -24,10 +24,73 @@
 }
 .wrapper {
   position: relative;
-  max-width: 1170px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
+.logo img {
+  width: 145px;
+  height: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

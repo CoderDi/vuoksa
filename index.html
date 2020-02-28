@@ -9,82 +9,90 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header class="header">
-    <div class="wrapper">
-      <div class="header__wrapper flex">
-        <a href="" class="logo">
-          <img src="images/icons.svg#logo-dark" alt="">
-        </a>
-        <div class="header-content">
-          <div class="header-top">
-            <div class="header-top__block">
-              <div class="city">
-                <span>Санкт-Петербург</span>
+  <div class="fullscreen">
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__wrapper flex">
+          <a href="" class="logo">
+            <img src="images/icons.svg#logo-dark" alt="">
+          </a>
+          <div class="header-content">
+            <div class="header-top flex">
+              <div class="header-top__block flex">
+                <div class="city">
+                  <span>Санкт-Петербург</span>
+                </div>
+                <a href="" class="header-top__link">Контакты</a>
+                <a href="" class="header-top__link">Доставка</a>
               </div>
-              <a href="" class="header-top__link">Контакты</a>
-              <a href="" class="header-top__link">Доставка</a>
+
+              <div class="header-top__block flex">
+                <a href="" class="phone">8 (800) 934 12 45</a>
+                <button class="btn btn--border btn--header js-call">Заказать звонок</button>
+              </div>
             </div>
 
-            <div class="header-top__block">
-              <a href="" class="phone">8 (800) 934 12 45</a>
-              <button class="btn btn--border btn--header js-call">Заказать звонок</button>
-            </div>
+            <nav class="header-menu flex">
+              <div class="menu-top hidden lg-visible">
+                <div class="city">
+                  <span>Санкт-Петербург</span>
+                </div>
+                <i class="menu-close js-menu-close"></i>
+              </div>
+              <div class="menu-catalog">
+                <div class="menu-catalog__title hidden">
+                  <i></i>
+                  <span>Каталог</span>
+                </div>
+                <ul class="menu-desktop flex">
+                  <li class="menu-desktop__item"><a href="">Ткани</a></li>
+                  <li class="menu-desktop__item"><a href="">Домашний текстиль</a></li>
+                  <li class="menu-desktop__item"><a href="">Декор интерьера</a></li>
+                  <li class="menu-desktop__item"><a href="">Подарочные наборы</a></li>
+                  <li class="menu-desktop__item menu-desktop__item--red"><a href=""><i></i> Акции</a></li>
+                </ul>
+              </div>
+
+              <div class="menu-collapse-icons flex">
+                <div class="search"><i></i></div>
+                <div class="login"><i></i></div>
+                <div class="butter lg-hidden js-butter--desktop"><i></i></div>
+                <div class="butter hidden lg-visible js-butter--mobile"><i></i></div>
+              </div>
+
+              <div class="menu-collapse">
+                <ul class="menu-collapse__list">
+                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
+                </ul>
+
+                <div class="menu-collapse__footer">
+                  <a href="" class="logo logo--menu">
+                    <img src="images/icons.svg#logo-dark" alt="">
+                  </a>
+                  <a href="" class="phone phone--menu">8 (800) 934 12 45</a>
+                  <button class="btn btn--border btn--header btn--menu js-call">Заказать звонок</button>
+                </div>
+              </div>
+              
+            </nav>
           </div>
-
-          <nav class="header-menu">
-            <div class="menu-top hidden lg-visible">
-              <div class="city">
-                <span>Санкт-Петербург</span>
-              </div>
-              <i class="menu-close js-menu-close"></i>
-            </div>
-            <div class="menu-catalog">
-              <div class="menu-catalog__title">
-                <i></i>
-                <span>Каталог</span>
-              </div>
-              <ul class="menu-desktop">
-                <li class="menu-desktop__item"><a href="">Ткани</a></li>
-                <li class="menu-desktop__item"><a href="">Домашний текстиль</a></li>
-                <li class="menu-desktop__item"><a href="">Декор интерьера</a></li>
-                <li class="menu-desktop__item"><a href="">Подарочные наборы</a></li>
-                <li class="menu-desktop__item menu-desktop__item--red"><a href=""><i></i> Акции</a></li>
-              </ul>
-            </div>
-
-            <div class="menu-collapse-icons lg-hidden">
-              <div class="search"><i></i></div>
-              <div class="login"><i></i></div>
-              <div class="butter lg-hidden js-butter--desktop"><i></i></div>
-              <div class="butter hidden lg-visible js-butter--mobile"><i></i></div>
-            </div>
-
-            <div class="menu-collapse">
-              <ul class="menu-collapse__list">
-                <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                <li class="menu-collapse__item"><a href=""><i></i></a></li>
-              </ul>
-
-              <div class="menu-collapse__footer">
-                <a href="" class="logo logo--menu">
-                  <img src="images/icons.svg#logo-dark" alt="">
-                </a>
-                <a href="" class="phone phone--menu">8 (800) 934 12 45</a>
-                <button class="btn btn--border btn--header btn--menu js-call">Заказать звонок</button>
-              </div>
-            </div>
-            
-          </nav>
         </div>
       </div>
+    </header>
+
+    <div class="banner">
+      <div class="banner__media"><img src="images/banner.jpg" alt=""></div>
+      <h1 class="banner__title">Дизайнерские решения для вашего дома</h1>
     </div>
-  </header>
+  </div>
+  
 
   <main class="main">
 

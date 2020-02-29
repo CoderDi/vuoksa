@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-  $(".js-getcall").click(function(){
+  $(".js-call").click(function(){
     $(".popup-block").hide();
-    $("#popup-block").show();
+    $("#popup-call").show();
     $(".popup").addClass("popup--show");
   });
   $(".popup-close").click(function(){
@@ -12,8 +12,9 @@ $(document).ready(function(){
     $(".popup").removeClass("popup--show");
   });
 
-  $(".butter").click(function(){
-    
+  $(".js-butter--desktop").click(function(){
+    $(this).toggleClass("icon--close");
+    $(".menu-collapse").toggleClass("menu-collapse--open");
   });
   $(".menu-close").click(function(){
     

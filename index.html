@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="libs/slick/slick.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-  <div class="fullscreen">
+<body id="top">
+  <section class="fullscreen">
     <header class="header">
       <div class="wrapper">
         <div class="header__wrapper flex">
@@ -27,7 +27,7 @@
               </div>
 
               <div class="header-top__block flex">
-                <a href="" class="phone">8 (800) 934 12 45</a>
+                <a href="" class="phone phone--header">8 (800) 934 12 45</a>
                 <button class="btn btn--border btn--header js-call">Заказать звонок</button>
               </div>
             </div>
@@ -49,30 +49,30 @@
                   <li class="menu-desktop__item"><a href="">Домашний текстиль</a></li>
                   <li class="menu-desktop__item"><a href="">Декор интерьера</a></li>
                   <li class="menu-desktop__item"><a href="">Подарочные наборы</a></li>
-                  <li class="menu-desktop__item menu-desktop__item--red"><a href=""><i></i> Акции</a></li>
+                  <li class="menu-desktop__item menu-desktop__item--sale"><a href="">Акции</a></li>
                 </ul>
               </div>
 
               <div class="menu-collapse-icons flex">
-                <div class="search"><i></i></div>
-                <div class="login"><i></i></div>
-                <div class="butter lg-hidden js-butter--desktop"><i></i></div>
-                <div class="butter hidden lg-visible js-butter--mobile"><i></i></div>
+                <div class="icon icon--search"></div>
+                <div class="icon icon--login"></div>
+                <div class="icon icon--butter lg-hidden js-butter--desktop"><i></i></div>
+                <div class="icon icon--butter hidden lg-visible js-butter--mobile"><i></i></div>
               </div>
 
               <div class="menu-collapse">
                 <ul class="menu-collapse__list">
-                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
-                  <li class="menu-collapse__item"><a href=""><i></i></a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i>О нас</a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i>Гарантии</a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i>Как купить</a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i>Возврат и обмен</a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i>Оплата</a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i>Оптовые продажи</a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i>Отзывы на Яндекс Маркете</a></li>
+                  <li class="menu-collapse__item"><a href=""><i></i>Частые вопросы</a></li>
                 </ul>
 
-                <div class="menu-collapse__footer">
+                <div class="menu-collapse__footer hidden">
                   <a href="" class="logo logo--menu">
                     <img src="images/icons.svg#logo-dark" alt="">
                   </a>
@@ -91,25 +91,184 @@
       <div class="banner__media"><img src="images/banner.jpg" alt=""></div>
       <h1 class="banner__title">Дизайнерские решения для вашего дома</h1>
     </div>
-  </div>
+  </section>
   
+  <section class="section">
+    <div class="wrapper">
+      <h2 class="section__title">Интересное из нашего блога</h2>
+      <div class="blog">
+        <div class="blog__item">
+          <a href="" class="blog__item_container">
+            <div class="blog__item_img"><img src="images/blog1.jpg" alt=""></div>
+            <div class="blog__item_content">
+              <span class="blog__item_arrow"></span>
+              <h3 class="blog__item_title">Происхождение льна</h3>
+              <p class="blog__item_text">Что такое лен. Как его собирают, как обрабатывают? Об этом вы узнаете в нашей статье, мы расскажем чем он...</p>
+            </div>
+          </a>
+        </div>
 
-  <main class="main">
+        <div class="blog__item">
+          <a href="" class="blog__item_container">
+            <div class="blog__item_img"><img src="images/blog2.jpg" alt=""></div>
+            <div class="blog__item_content">
+              <span class="blog__item_arrow"></span>
+              <h3 class="blog__item_title">Происхождение льна</h3>
+              <p class="blog__item_text">Что такое лен. Как его собирают, как обрабатывают? Об этом вы узнаете в нашей статье, мы расскажем чем он...</p>
+            </div>
+          </a>
+        </div>
 
-  </main>
+        <div class="blog__item">
+          <a href="" class="blog__item_container">
+            <div class="blog__item_img"><img src="images/blog3.jpg" alt=""></div>
+            <div class="blog__item_content">
+              <span class="blog__item_arrow"></span>
+              <h3 class="blog__item_title">Происхождение льна</h3>
+              <p class="blog__item_text">Что такое лен. Как его собирают, как обрабатывают? Об этом вы узнаете в нашей статье, мы расскажем чем он...</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-top">
+        <div class="footer__logo">
+          <a href="" class="logo--footer"><img src="images/icons.svg#logo-white" alt=""></a>
+          <div class="socials">
+            <a href="" class="socials__link socials__link--vk"></a>
+            <a href="" class="socials__link socials__link--fb"></a>
+            <a href="" class="socials__link socials__link--ig"></a>
+          </div>
+        </div>
 
+        <ul class="footer__menu">
+          <li class="footer__menu_item"><a href="">Ткани</a></li>
+          <li class="footer__menu_item"><a href="">Домашний текстиль</a></li>
+          <li class="footer__menu_item"><a href="">Декор интерьера</a></li>
+          <li class="footer__menu_item"><a href="">Подарочные наборы</a></li>
+        </ul>
+
+        <ul class="footer__menu">
+          <li class="footer__menu_item"><a href="">О компании</a></li>
+          <li class="footer__menu_item"><a href="">Контакты</a></li>
+          <li class="footer__menu_item"><a href="">Оплата</a></li>
+          <li class="footer__menu_item"><a href="">Доставка</a></li>
+        </ul>
+
+        <div class="footer__pay">
+          <span class="footer__pay_title">Мы принимаем к оплате</span>
+          <div class="footer__pay_items">
+            <span class="footer__pay_item footer__pay_item--mastercard"></span>
+            <span class="footer__pay_item footer__pay_item--visa"></span>
+            <span class="footer__pay_item footer__pay_item--mir"></span>
+            <span class="footer__pay_item footer__pay_item--paypal"></span>
+            <span class="footer__pay_item footer__pay_item--yandex"></span>
+            <span class="footer__pay_item footer__pay_item--qiwi"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="copyright">2020 © Вуокса</span>
+      </div>
+    </div>
   </footer>
+
+  <!-- <a href="#top" class="up"><i></i></a> -->
 
   <div class="popup">
     <a class="popup-bg"></a>
     <div class="popup-content">
       <a class="popup-close"></a>
 
-      <div class="popup-block" id="popup-block">
+      <div class="popup-block popup-block-call" id="popup-call">
+        <div class="popup-block__title">
+          <span>Заказать звонок</span>
+        </div>
+        <div class="popup-block__content">
+          <form class="popup-form">
+            <label class="label label--required label--popup">
+              <input type="text" class="input input--popup" placeholder="Представьтесь" required>
+            </label>
+            <label class="label label--required label--popup">
+              <input type="tel" class="input input--popup" placeholder="Телефон" required>
+            </label>
+            <button type="submit" class="btn btn--full submit">Отправить данные</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup-block popup-block-success" id="popup-success">
+        <div class="popup-block__title">
+          <span>Спасибо за заявку!</span>
+        </div>
+        <div class="popup-block__content">
+          <div class="popup-block__icon"></div>
+          <span class="popup-success__text">Наш специалист свяжется с вами <br> как можно скорее</span>
+        </div>
+      </div>
+
+      <div class="popup-block popup-block-city" id="popup-city">
+        <div class="popup-city__top">
+          <span>Выберите город</span>
+          <form action="" class="city-search">
+            <input type="text" class="input city-search__input" placeholder="Поиск">
+            <button type="submit" class="city-search__btn"><span></span></button>
+          </form>
+        </div>
+
+        <div class="city__default">
+          <span class="city__default_item">Санкт-Петербург</span>
+          <span class="city__default_item">Москва</span>
+          <span class="city__default_item">Новосибирск</span>
+          <span class="city__default_item">Екатеринбург</span>
+        </div>
+
+        <strong class="city__list_title">По алфавиту</strong>
+        
+        <div class="cities">
+          <div class="city__list_block">
+            <strong class="city__list_letter">А</strong>
+            <span class="city__item">Абакан</span>
+            <span class="city__item">Азов</span>
+            <span class="city__item">Александров</span>
+            <span class="city__item">Алексин</span>
+            <span class="city__item">Альметьевск</span>
+            <span class="city__item">Анапа</span>
+            <span class="city__item">Ангарск</span>
+            <span class="city__item">Анжеро-Судженск</span>
+          </div>
+          <div class="city__list_block">
+            <strong class="city__list_letter">Б</strong>
+            <span class="city__item">Балаково</span>
+            <span class="city__item">Балахна</span>
+            <span class="city__item">Балашиха</span>
+            <span class="city__item">Балашов</span>
+            <span class="city__item">Барнаул</span>
+            <span class="city__item">Батайск</span>
+            <span class="city__item">Белгород</span>
+            <span class="city__item">Белово</span>
+          </div>
+          <div class="city__list_block">
+            <strong class="city__list_letter">В</strong>
+            <span class="city__item">Великие Луки</span>
+            <span class="city__item">Великий Новгород</span>
+            <span class="city__item">Верхняя Пымша</span>
+            <span class="city__item">Владимир</span>
+            <span class="city__item">Вдаливосток</span>
+            <span class="city__item">Вологда</span>
+            <span class="city__item">Воронеж</span>
+            <span class="city__item">Волгорад</span>
+          </div>          
+        </div>
         
       </div>
+
+
     </div>
   </div> 
 

@@ -19,7 +19,7 @@
           <div class="header-content">
             <div class="header-top flex">
               <div class="header-top__block flex">
-                <div class="city">
+                <div class="city js-city-change">
                   <span>Санкт-Петербург</span>
                 </div>
                 <a href="" class="header-top__link">Контакты</a>
@@ -54,7 +54,7 @@
               </div>
 
               <div class="menu-collapse-icons flex">
-                <div class="icon icon--search"></div>
+                <div class="icon icon--search js-search-open"></div>
                 <div class="icon icon--login"></div>
                 <div class="icon icon--butter lg-hidden js-butter--desktop"><i></i></div>
                 <div class="icon icon--butter hidden lg-visible js-butter--mobile"><i></i></div>
@@ -90,6 +90,13 @@
     <div class="banner">
       <div class="banner__media"><img src="images/banner.jpg" alt=""></div>
       <h1 class="banner__title">Дизайнерские решения для вашего дома</h1>
+    </div>
+  </section>
+
+  <section class="section solution">
+    <div class="wrapper">
+      <h2 class="section__title">Вдохновляйтесь готовыми решениями</h2>
+
     </div>
   </section>
   
@@ -178,6 +185,268 @@
     </div>
   </footer>
 
+  <div class="cart">
+    <div class="cart__btns js-cart-open">
+      <div class="cart__btn cart__btn--cart">
+        <span class="cart__btn_count">2</span>
+      </div>
+      <div class="cart__btn cart__btn--compare">
+        <span class="cart__btn_count">2</span>
+      </div>
+      <div class="cart__btn cart__btn--wish">
+        <span class="cart__btn_count">2</span>
+      </div>
+    </div>
+
+    <div class="cart-top">
+      <strong class="cart-top__title">КОРЗИНА</strong>
+      <div class="cart-tabs">
+        <span class="cart-tab-link cart-tab-link--active cart-ready-link">Готовые к заказу (<span class="js-ready-count">2</span>)</span>
+        <span class="cart-tab-link cart-wish-link">Отложенные (<span class="js-wihs-count">2</span>)</span>
+      </div>
+      <div class="cart-clear__btn"><i></i>Очистить</div>
+    </div>
+
+    <!-- <div class="cart-empty">
+      <span class="cart-empty__icon"></span>
+      <div class="cart-empty__content">
+        <strong class="cart-empty__title">Ваша корзина пуста</strong>
+        <p class="cart-empty__text">Исправить это просто: выберите в каталоге интересующий товар и нажмите кнопку «В корзину».</p>
+        <a href="" class="btn btn--full cart-empty__btn">Перейти в каталог</a>
+      </div>
+    </div> -->
+
+    <div class="cart-block cart-block-cart">
+      <div class="cart-table">
+        <div class="cart-table__title">
+          <span class="cart-table__col1">Товар</span>
+          <span class="cart-table__col2">Цена</span>
+          <span class="cart-table__col3">Количество</span>
+          <span class="cart-table__col4">Стоимость</span>
+          <span class="cart-table__col5"></span>
+        </div>
+
+        <div class="cart-list scrollable">
+          <div class="cart-item">
+            <span class="cart-item__remove"></span>
+            <div class="cart-table__col1">
+              <a href="" class="cart-table__item">
+                <div class="cart-table__item_img"><img src="images/cart-item1.jpg" alt=""></div>
+                <span class="cart-table__item_title">Ткань лён умягченный "голубая мята" костюмный</span>
+              </a>
+            </div>  
+            <div class="cart-table__col2">
+              <span class="cart-table__price cart-item-price-one"><strong>110</strong> руб./м</span>
+            </div>
+            <div class="cart-table__col3">
+              <div class="counter" data-step="0.1">
+                <i class="counter-btn counter-minus"></i>
+                <input class="counter-value" value="4.1">
+                <i class="counter-btn counter-plus"></i>
+              </div>
+            </div>
+            <div class="cart-table__col4">
+              <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
+            </div>
+            <div class="cart-table__col5">
+              <span class="wish-heart"></span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <span class="cart-item__remove"></span>
+            <div class="cart-table__col1">
+              <a href="" class="cart-table__item">
+                <div class="cart-table__item_img"><img src="images/cart-item1.jpg" alt=""></div>
+                <span class="cart-table__item_title">Ткань лён умягченный "голубая мята" костюмный</span>
+              </a>
+            </div>  
+            <div class="cart-table__col2">
+              <span class="cart-table__price cart-item-price-one">
+                <strong>110</strong> руб./м
+                <div class="cart-table__price--old">250 руб.</div>
+              </span>
+            </div>
+            <div class="cart-table__col3">
+              <div class="counter" data-step="0.1">
+                <i class="counter-btn counter-minus"></i>
+                <input class="counter-value" value="4.1">
+                <i class="counter-btn counter-plus"></i>
+              </div>
+            </div>
+            <div class="cart-table__col4">
+              <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
+            </div>
+            <div class="cart-table__col5">
+              <span class="wish-heart"></span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <span class="cart-item__remove"></span>
+            <div class="cart-table__col1">
+              <a href="" class="cart-table__item">
+                <div class="cart-table__item_img"><img src="images/cart-item1.jpg" alt=""></div>
+                <span class="cart-table__item_title">Ткань лён умягченный "голубая мята" костюмный</span>
+              </a>
+            </div>  
+            <div class="cart-table__col2">
+              <span class="cart-table__price cart-item-price-one"><strong>110</strong> руб./м</span>
+            </div>
+            <div class="cart-table__col3">
+              <div class="counter" data-step="0.1">
+                <i class="counter-btn counter-minus"></i>
+                <input class="counter-value" value="4.1">
+                <i class="counter-btn counter-plus"></i>
+              </div>
+            </div>
+            <div class="cart-table__col4">
+              <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
+            </div>
+            <div class="cart-table__col5">
+              <span class="wish-heart"></span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <span class="cart-item__remove"></span>
+            <div class="cart-table__col1">
+              <a href="" class="cart-table__item">
+                <div class="cart-table__item_img"><img src="images/cart-item1.jpg" alt=""></div>
+                <span class="cart-table__item_title">Ткань лён умягченный "голубая мята" костюмный</span>
+              </a>
+            </div>  
+            <div class="cart-table__col2">
+              <span class="cart-table__price cart-item-price-one"><strong>110</strong> руб./м</span>
+            </div>
+            <div class="cart-table__col3">
+              <div class="counter" data-step="0.1">
+                <i class="counter-btn counter-minus"></i>
+                <input class="counter-value" value="4.1">
+                <i class="counter-btn counter-plus"></i>
+              </div>
+            </div>
+            <div class="cart-table__col4">
+              <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
+            </div>
+            <div class="cart-table__col5">
+              <span class="wish-heart"></span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <span class="cart-item__remove"></span>
+            <div class="cart-table__col1">
+              <a href="" class="cart-table__item">
+                <div class="cart-table__item_img"><img src="images/cart-item1.jpg" alt=""></div>
+                <span class="cart-table__item_title">Ткань лён умягченный "голубая мята" костюмный</span>
+              </a>
+            </div>  
+            <div class="cart-table__col2">
+              <span class="cart-table__price cart-item-price-one"><strong>110</strong> руб./м</span>
+            </div>
+            <div class="cart-table__col3">
+              <div class="counter" data-step="0.1">
+                <i class="counter-btn counter-minus"></i>
+                <input class="counter-value" value="4.1">
+                <i class="counter-btn counter-plus"></i>
+              </div>
+            </div>
+            <div class="cart-table__col4">
+              <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
+            </div>
+            <div class="cart-table__col5">
+              <span class="wish-heart"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-bottom">
+          <div class="cart-result-block">
+            <div class="cart-result-block__left">
+              ИТОГО:
+            </div>
+            <div class="cart-result-block__right">
+              <strong>780</strong> руб.
+              <span class="cart-result-block__sale">1200 руб.</span>
+            </div>
+          </div>
+
+          <div class="cart-bottom__btns">
+            <div class="cart-bottom__next">
+              <div class="btn btn--border cart-bottom__btn js-cart-close">продолжить покупки</div>
+              <span class="cart-bottom__span">Вернуться к выбору товаров</span>
+            </div>
+
+            <div class="cart-bottom__tocart">
+              <a href="" class="btn btn--full cart-bottom__btn">Перейти в корзину</a>
+              <span class="cart-bottom__span">Полноценное оформление заказа</span>
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </div>
+    </div>
+
+    <div class="cart-block cart-block-wish">
+      <div class="cart-table">
+        <div class="cart-table__title">
+          <span class="cart-table__col1">Товар</span>
+          <span class="cart-table__col2">Цена</span>
+          <span class="cart-table__col3">Количество</span>
+          <span class="cart-table__col4">Стоимость</span>
+          <span class="cart-table__col5"></span>
+        </div>
+
+        <div class="cart-list scrollable">
+          <div class="cart-item">
+            <span class="cart-item__remove"></span>
+            <div class="cart-table__col1">
+              <a href="" class="cart-table__item">
+                <div class="cart-table__item_img"><img src="images/cart-item1.jpg" alt=""></div>
+                <span class="cart-table__item_title">Ткань лён умягченный "голубая мята" костюмный</span>
+              </a>
+            </div>  
+            <div class="cart-table__col2">
+              <span class="cart-table__price cart-item-price-one"><strong>110</strong> руб./м</span>
+            </div>
+            <div class="cart-table__col3">
+              <span class="cart-table__price cart-item-price-full">1 м</span>
+            </div>
+            <div class="cart-table__col4">
+              <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
+            </div>
+            <div class="cart-table__col5">
+              <span class="cart-basket"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search">
+    <div class="search-bg js-search-close"></div>
+    <div class="search-container">
+      <div class="wrapper">
+        <span class="search-close js-search-close"></span>
+        <form action="" class="search-form">
+          <input type="text" class="input city-search__input js-input-search" placeholder="Поиск">
+          <button type="submit" class="city-search__btn"><span></span></button>
+
+          <div class="city-search__results">
+            <span class="city-search__result">Воронеж</span>
+            <span class="city-search__result">Волгоград</span>
+            <span class="city-search__result">Вологда</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <!-- <a href="#top" class="up"><i></i></a> -->
 
   <div class="popup">
@@ -216,8 +485,14 @@
         <div class="popup-city__top">
           <span>Выберите город</span>
           <form action="" class="city-search">
-            <input type="text" class="input city-search__input" placeholder="Поиск">
+            <input type="text" class="input city-search__input js-input-search" placeholder="Поиск">
             <button type="submit" class="city-search__btn"><span></span></button>
+
+            <div class="city-search__results">
+              <span class="city-search__result">Воронеж</span>
+              <span class="city-search__result">Волгоград</span>
+              <span class="city-search__result">Вологда</span>
+            </div>
           </form>
         </div>
 
@@ -230,7 +505,7 @@
 
         <strong class="city__list_title">По алфавиту</strong>
         
-        <div class="cities">
+        <div class="cities scrollable">
           <div class="city__list_block">
             <strong class="city__list_letter">А</strong>
             <span class="city__item">Абакан</span>
@@ -263,7 +538,73 @@
             <span class="city__item">Вологда</span>
             <span class="city__item">Воронеж</span>
             <span class="city__item">Волгорад</span>
-          </div>          
+          </div>
+          <div class="city__list_block">
+            <strong class="city__list_letter">А</strong>
+            <span class="city__item">Абакан</span>
+            <span class="city__item">Азов</span>
+            <span class="city__item">Александров</span>
+            <span class="city__item">Алексин</span>
+            <span class="city__item">Альметьевск</span>
+            <span class="city__item">Анапа</span>
+            <span class="city__item">Ангарск</span>
+            <span class="city__item">Анжеро-Судженск</span>
+          </div>
+          <div class="city__list_block">
+            <strong class="city__list_letter">Б</strong>
+            <span class="city__item">Балаково</span>
+            <span class="city__item">Балахна</span>
+            <span class="city__item">Балашиха</span>
+            <span class="city__item">Балашов</span>
+            <span class="city__item">Барнаул</span>
+            <span class="city__item">Батайск</span>
+            <span class="city__item">Белгород</span>
+            <span class="city__item">Белово</span>
+          </div>
+          <div class="city__list_block">
+            <strong class="city__list_letter">В</strong>
+            <span class="city__item">Великие Луки</span>
+            <span class="city__item">Великий Новгород</span>
+            <span class="city__item">Верхняя Пымша</span>
+            <span class="city__item">Владимир</span>
+            <span class="city__item">Вдаливосток</span>
+            <span class="city__item">Вологда</span>
+            <span class="city__item">Воронеж</span>
+            <span class="city__item">Волгорад</span>
+          </div>
+          <div class="city__list_block">
+            <strong class="city__list_letter">А</strong>
+            <span class="city__item">Абакан</span>
+            <span class="city__item">Азов</span>
+            <span class="city__item">Александров</span>
+            <span class="city__item">Алексин</span>
+            <span class="city__item">Альметьевск</span>
+            <span class="city__item">Анапа</span>
+            <span class="city__item">Ангарск</span>
+            <span class="city__item">Анжеро-Судженск</span>
+          </div>
+          <div class="city__list_block">
+            <strong class="city__list_letter">Б</strong>
+            <span class="city__item">Балаково</span>
+            <span class="city__item">Балахна</span>
+            <span class="city__item">Балашиха</span>
+            <span class="city__item">Балашов</span>
+            <span class="city__item">Барнаул</span>
+            <span class="city__item">Батайск</span>
+            <span class="city__item">Белгород</span>
+            <span class="city__item">Белово</span>
+          </div>
+          <div class="city__list_block">
+            <strong class="city__list_letter">В</strong>
+            <span class="city__item">Великие Луки</span>
+            <span class="city__item">Великий Новгород</span>
+            <span class="city__item">Верхняя Пымша</span>
+            <span class="city__item">Владимир</span>
+            <span class="city__item">Вдаливосток</span>
+            <span class="city__item">Вологда</span>
+            <span class="city__item">Воронеж</span>
+            <span class="city__item">Волгорад</span>
+          </div>         
         </div>
         
       </div>

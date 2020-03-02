@@ -105,13 +105,48 @@ $(document).ready(function(){
 
   /* SOLUTIONS */
   $(".solution__btn").click(function(){
+    var num = parseInt($(this).attr("data-content"));
     $(this).parents(".solution").find(".solution__btn").removeClass("active");
     $(this).addClass("active");
+
+    $(this).parents(".solution").find(".solution__slide").hide();
+    $(this).parents(".solution").find(".solution__slide:nth-child(" + (num + 1) + ")").show();
   });
   $(".solution__items-slide").click(function(){
     $(this).parents(".solution__slide").find(".solution__items-slide").removeClass("active");
     $(this).addClass("active");
   });
+
+  $(".solutions").slick({
+    infinite: false,
+    speed: 200,
+    autoplay: false,
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    fade: true,
+    appendDots: "#solution-dots",
+    slide: ".solution"
+  });
+
+  $(".solution__arrow--prev").click(function(){
+    $(".solutions").slick('slickPrev');
+  });
+
+  $(".solution__arrow--next").click(function(){
+    $(".solutions").slick('slickNext');
+  });
+
+  $('.solutions').on('afterChange', function(event, slick, currentSlide){
+    $(".solution-current-slide").text("0" + (currentSlide + 1));
+  });
+
+  var allCountSolutions = $(".solution").length;
+  if (allCountSolutions < 10) {
+    allCountSolutions = "0" + allCountSolutions;
+  }
+  $(".solution-all-slides").text(allCountSolutions);
+
 
   
   $(".js-slider").slick({

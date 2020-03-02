@@ -102,6 +102,17 @@ $(document).ready(function(){
     $(this).parents(".filter__block").find(".filter__block_content").slideToggle(200);
   });
 
+
+  /* SOLUTIONS */
+  $(".solution__btn").click(function(){
+    $(this).parents(".solution").find(".solution__btn").removeClass("active");
+    $(this).addClass("active");
+  });
+  $(".solution__items-slide").click(function(){
+    $(this).parents(".solution__slide").find(".solution__items-slide").removeClass("active");
+    $(this).addClass("active");
+  });
+
   
   $(".js-slider").slick({
     infinite: true,
@@ -112,43 +123,47 @@ $(document).ready(function(){
     slidesToScroll: 1
   });
 
-  var html5Slider = document.getElementById('price-slider'),
-      minValue = parseInt($(html5Slider).attr("data-min")),
-      maxValue = parseInt($(html5Slider).attr("data-max")),
-      step = parseInt($(html5Slider).attr("data-step"));
 
-  noUiSlider.create(html5Slider, {
-      start: [110, 545],
-      connect: true,
-      step: step,
-      range: {
-          'min': minValue,
-          'max': maxValue
-      }
-  });
+  /*Price slider */
+  if ($("#price-slider").length > 0) {
+    var html5Slider = document.getElementById('price-slider'),
+        minValue = parseInt($(html5Slider).attr("data-min")),
+        maxValue = parseInt($(html5Slider).attr("data-max")),
+        step = parseInt($(html5Slider).attr("data-step"));
 
-  var inputMinNumber = document.getElementById('price-slider__input--min'),
-  inputMaxNumber = document.getElementById('price-slider__input--max');
+    noUiSlider.create(html5Slider, {
+        start: [110, 545],
+        connect: true,
+        step: step,
+        range: {
+            'min': minValue,
+            'max': maxValue
+        }
+    });
 
-  html5Slider.noUiSlider.on('update', function (values, handle) {
+    var inputMinNumber = document.getElementById('price-slider__input--min'),
+    inputMaxNumber = document.getElementById('price-slider__input--max');
 
-      var value = values[handle];
+    html5Slider.noUiSlider.on('update', function (values, handle) {
 
-      if (handle) {
-          inputMaxNumber.value = Math.round(value);
-      } else {
-        inputMinNumber.value = Math.round(value);
-      }
-  });
+        var value = values[handle];
 
-  inputMaxNumber.addEventListener('change', function () {
-      html5Slider.noUiSlider.set([null, this.value]);
-  });
+        if (handle) {
+            inputMaxNumber.value = Math.round(value);
+        } else {
+          inputMinNumber.value = Math.round(value);
+        }
+    });
 
-  inputMinNumber.addEventListener('change', function () {
-    html5Slider.noUiSlider.set([this.value, null]);
-  });
-  
+    inputMaxNumber.addEventListener('change', function () {
+        html5Slider.noUiSlider.set([null, this.value]);
+    });
+
+    inputMinNumber.addEventListener('change', function () {
+      html5Slider.noUiSlider.set([this.value, null]);
+    });
+  }
+    
   
 
 

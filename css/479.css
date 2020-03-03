@@ -1,0 +1,13 @@
+@media screen and (max-width: 479px) {
+  .phone--header {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 20px;
+    background-size: 15px 15px;
+  }
+  .header-menu {
+    width: 100%;
+    max-width: 380px;
+    right: -381px;
+  }
+}

@@ -21,8 +21,21 @@ $(document).ready(function(){
     $(this).toggleClass("icon--close");
     $(".menu-collapse").toggleClass("menu-collapse--open");
   });
-  $(".menu-close").click(function(){
-    
+  $(".js-butter--mobile").click(function(){
+    $("#menu").addClass("active");
+  });
+  $(".js-menu-close").click(function(){
+    $("#menu").removeClass("active");
+  });
+
+  $(".js-menu-catalog-open").click(function(){
+    $(this).toggleClass("active");
+    $(this).parents(".menu-catalog").find(".menu-desktop").slideToggle(200);
+  });
+
+  $(".js-footer-menu-open").click(function(){
+    $(this).toggleClass("active");
+    $(this).parents(".footer__menu").find(".footer__menu_list").slideToggle(200);
   });
 
   $(".js-input-search").on('input keyup', function(e) {

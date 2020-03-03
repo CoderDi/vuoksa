@@ -22,53 +22,152 @@
       <article class="article">
         <div class="article-top">
           <div class="article-media">
+            <div class="article-media__img-block">
+              <div class="article-media__img">
+                <img src="images/article.jpg" alt="">
+                <span class="article-media__img--popup-open"></span>
+              </div>
+              <div class="article-media__labels">
+                <span class="article-media__label item-label item-label--new">Новинка</span>
+                <span class="article-media__label item-label item-label--sale">Скидка </span>
+              </div>
 
+              <div class="article-media__btns">
+                <div class="item-icon item-wish item-icon--article">
+                  <span class="item-wish__icon wish-heart js-wish-add"></span>
+                  <span class="item-icon__hint">Отложить</span>
+                </div>
+                <div class="item-icon item-compare item-icon--article">
+                  <span class="item-compare__icon js-compare-add"></span>
+                  <span class="item-icon__hint">Сравнить</span>
+                </div>
+              </div>
+            </div>
+
+
+            <label class="toggle">
+              <input type="checkbox" class="checkbox">
+              <div class="knobs"></div>
+            </label>
+
+            <div class="article-media__slider scroll-horizontal">
+              <div class="solution__items-slide"><img src="images/item1.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item2.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item3.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item5.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item9.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item6.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item7.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item8.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item9.jpg" alt=""></div>
+            </div>
           </div>
 
           <div class="article-description">
             <h1 class="article__title">Ткань лен умягченный 
               «голубая мята» костюмный </h1>
             
-            <div class="article-meta">
-              <span class="article-status article-status-no">Скоро будет</span>
-              <span class="article-status article-status-yes">В наличии (100 м)</span>
+            <div class="article-description__flex">
+              <div class="article-meta">
+                <span class="article-status article-status-no">Скоро будет</span>
+                <span class="article-status article-status-yes">В наличии (100 м)</span>
 
-              <span class="article-price"><strong>110</strong> руб./м</span>
+                <span class="article-price"><strong>110</strong> руб./м</span>
 
-              <div class="counter article-counter" data-step="0.1">
-                <i class="counter-btn counter-minus"></i>
-                <input class="counter-value" value="4.1">
-                <i class="counter-btn counter-plus"></i>
+                <div class="counter article-counter" data-step="0.1">
+                  <i class="counter-btn counter-minus"></i>
+                  <input class="counter-value" value="4.1">
+                  <i class="counter-btn counter-plus"></i>
+                </div>
+
+                <span class="article-over-price">Общая стоимость: <strong>451 руб.</strong></span>
+
+                <span class="btn btn--full item__btn item__btn--cart js-cart-add article__btn">
+                  <i></i>
+                  <span class="item__btn_price"> В корзину</span>
+                  <span class="item__btn_incart"> В корзине</span>
+                </span>
+
+                <span class="btn btn--full article__btn">
+                  <span class="item__btn_price">Оформить предзаказ</span>
+                </span>
+
+                <span class="article-alert"><span>Cообщить о поступлении</span></span>
+
+                <div class="article-bonus">
+                  <div class="article-bonus__item article-bonus__item--aeroflot">
+                    <i></i><span>+ 312 миль</span>
+                  </div>
+                  <div class="article-bonus__item article-bonus__item--spasibo">
+                    <i></i><span>+ 140 бонусов</span>
+                  </div>
+                </div>
+
               </div>
 
-              <span class="article-over-price">Общая стоимость: <strong>451 руб.</strong></span>
-
-              <span class="btn btn--full item__btn item__btn--cart js-cart-add article__btn">
-                <i></i>
-                <span class="item__btn_price"> В корзину</span>
-                <span class="item__btn_incart"> В корзине</span>
-              </span>
-
-              <span class="btn btn--full article__btn">
-                <span class="item__btn_price">Оформить предзаказ</span>
-              </span>
-
-              <span class="article-alert"><span>Cообщить о поступлении</span></span>
-
-              <div class="article-bonus">
-                <div class="article-bonus__item article-bonus__item--aeroflot">
-                  <i></i><span>+ 312 миль</span>
-                </div>
-                <div class="article-bonus__item article-bonus__item--spasibo">
-                  <i></i><span>+ 140 бонусов</span>
+              <div class="article-tth">
+                <span class="artikul">Артикул: № 257416</span>
+                <div class="tth-list">
+                  <div class="tth-item">
+                    <span class="tth-name">
+                      Производитель
+                      <i></i>
+                    </span>
+                    <strong class="tth-value">ООО Рога и копыта</strong>
+                  </div>
+                  <div class="tth-item">
+                    <span class="tth-name">Ширина
+                      <i></i>
+                    </span>
+                    <i></i>
+                    <strong class="tth-value">150 см</strong>
+                  </div>
+                  <div class="tth-item">
+                    <span class="tth-name">Плотность ткани
+                      <i></i>
+                    </span>
+                    <i></i>
+                    <strong class="tth-value">200 гр/м<sup>2</sup></strong>
+                  </div>
+                  <div class="tth-item">
+                    <span class="tth-name">Рисунок
+                      <i></i>
+                    </span>
+                    <i></i>
+                    <strong class="tth-value">нет</strong>
+                  </div>
+                  <div class="tth-item">
+                    <span class="tth-name">Состав
+                      <i></i>
+                    </span>
+                    <i></i>
+                    <strong class="tth-value">лен 100%</strong>
+                  </div>
+                  <div class="tth-item">
+                    <span class="tth-name">Тип ткани
+                      <i></i>
+                    </span>
+                    <i></i>
+                    <strong class="tth-value">костюмный умягченный лен</strong>
+                  </div>
+                  <div class="tth-item">
+                    <span class="tth-name">Принт
+                      <i></i>
+                    </span>
+                    <i></i>
+                    <strong class="tth-value">однотон</strong>
+                  </div>
+                  <div class="tth-item">
+                    <span class="tth-name">Глиттер
+                      <i></i>
+                    </span>
+                    <i></i>
+                    <strong class="tth-value">нет</strong>
+                  </div>
                 </div>
               </div>
-
             </div>
-
-            <div class="article-tth">
-
-            </div>
+            
           </div>
         </div>
 

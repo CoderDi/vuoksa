@@ -102,6 +102,10 @@ $(document).ready(function(){
     $(this).parents(".filter__block").find(".filter__block_content").slideToggle(200);
   });
 
+  $(".toggle").click(function(){
+    $(this).toggleClass("toggle-left");
+  });
+
 
   /* SOLUTIONS */
   $(".solution__btn").click(function(){
@@ -113,7 +117,7 @@ $(document).ready(function(){
     $(this).parents(".solution").find(".solution__slide:nth-child(" + (num + 1) + ")").show();
   });
   $(".solution__items-slide").click(function(){
-    $(this).parents(".solution__slide").find(".solution__items-slide").removeClass("active");
+    $(".solution__items-slide").removeClass("active");
     $(this).addClass("active");
   });
 

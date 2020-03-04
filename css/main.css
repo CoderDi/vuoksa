@@ -1604,7 +1604,7 @@ CATALOG
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.sort {
+.sort-block {
   margin-bottom: 20px;
 }
 .sort__span {
@@ -1631,8 +1631,8 @@ CATALOG
   color: #424242;
   border-color: #424242;
 }
-.sort__item--active,
-.sort__item--active:hover {
+.sort__item.active,
+.sort__item.active:hover {
   color: #424242;
   border-color: transparent;
 }

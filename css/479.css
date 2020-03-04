@@ -10,4 +10,64 @@
     max-width: 380px;
     right: -381px;
   }
+  .rubric {
+    width: 50%;
+  }
+  .rubric__container {
+    height: 65px;
+  }
+  .item__container {
+    padding: 10px 5px;
+  }
+  .item__img {
+    height: 110px;
+  }
+  .item-label {
+    width: 55px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .item {
+    padding: 0 7px;
+    margin-bottom: 14px;
+  }
+  .item-top {
+    height: 20px;
+  }
+  .catalog {
+    margin: 0 -7px 10px;
+  }
+  .item-status-text{
+    font-size: 10px;
+    line-height: 1;
+    display: block;
+  }
+  .item__link,
+  .item__price--current,
+  .item__btn,
+  .btn-more span {
+    font-size: 12px;
+  }
+  .item__price--old {
+    font-size: 10px;
+    padding-left: 6px;
+  }
+  .item__btn--cart i {
+    width: 15px;
+    height: 15px;
+  }
+  .btn-more i {
+    width: 20px;
+    height: 20px;
+  }
+  .btn-more {
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
 }

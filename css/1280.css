@@ -222,7 +222,66 @@
   .menu-collapse__item--contacts a {
     background-image: url(../images/icons.svg#contacts);
   }
-  
+  .banner__media {
+    display: flex;
+    justify-content: center;
+  }
+  .banner__media img {
+    height: 100%;
+  }
+  .solutions {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .solution__img {
+    width: 100%;
+  }
+  .solution__slides {
+    position: relative;
+    top: 0;
+    left: 10px;
+    padding: 25px;
+    height: 465px;
+  }
+  .section__title--solution {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .solutions-nav {
+    right: 110px;
+    bottom: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    height: 465px;
+  }
+  .solution-arrows,
+  .solutions .slick-dots {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .solution__arrow--prev {
+    transform: rotate(90deg) scale(.8);
+    margin: 0 0 20px;
+  }
+  .solution__arrow--next {
+    margin: 20px 0 0;
+    transform: rotate(-90deg) scale(.8);
+  }
+  .solutions .slick-dots {
+    margin-left: 20px;
+  }
+  .solution__arrow::after {
+    width: 240px;
+  }
+  .item {
+    width: 50%;
+  }
+  .rubric {
+    width: 25%;
+  }
 
 
 

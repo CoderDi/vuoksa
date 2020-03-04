@@ -7,6 +7,10 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="libs/slick/slick.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/1280.css">
+  <link rel="stylesheet" href="css/979.css">
+  <link rel="stylesheet" href="css/767.css">
+  <link rel="stylesheet" href="css/479.css">
 </head>
 <body id="top">
   <main class="main">
@@ -18,7 +22,7 @@
       </div>
 
       <div class="main__flex">
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
           <div class="sidebar-menu">
             <a href="" class="sidebar-menu__link">Хлопок <span></span></a>
             <a href="" class="sidebar-menu__link sidebar-menu__link--active">Лен <span></span></a>
@@ -30,7 +34,7 @@
             <a href="" class="sidebar-menu__link">карты образцов</a>
           </div>
 
-          <div class="filter">
+          <div class="filter" id="filter">
             <div class="filter-top flex">
               <strong>Фильтр</strong>
               <span class="filter-reset js-reset-filter">Сбросить</span>
@@ -238,14 +242,20 @@
             </div>
           </div>
           
-          <div class="sort">
-            <span class="sort__span">Сортировка:</span>
-            <div class="sort__block">
-              <span class="sort__item sort__item--active">по популярности</span>
-              <span class="sort__item">по возрастанию цены</span>
-              <span class="sort__item">по убыванию цены</span>
+          <div class="sort-block flex">
+            <div class="filter-mobile hidden md-visible" id="filter-mobile">
+              <div class="filter-btn js-filter-open">Фильтр</div>
+            </div>
+            <div class="sort js-sort">
+              <span class="sort__span">Сортировка:</span>
+              <div class="sort__block">
+                <span class="sort__item active">по популярности</span>
+                <span class="sort__item">по возрастанию цены</span>
+                <span class="sort__item">по убыванию цены</span>
+              </div>
             </div>
           </div>
+          
 
           <div class="catalog">
             <div class="item">

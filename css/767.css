@@ -97,6 +97,240 @@
   .footer__menu_item a {
     font-size: 12px;
   }
+  .section {
+    padding: 60px 0;
+  }
+  .section__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .blog__item {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 390px;
+  }
+  .blog {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .blog__item:nth-child(n) {
+    display: block;
+  }
+  .banner__title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .solution__slides {
+    width: 100%;
+    max-width: 485px;
+    position: static;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  .section__title--solution {
+    margin-bottom: 15px;
+  }
+  .solution__img::before {
+    top: -8px;
+    left: -8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .solution__img::after {
+    top: -4px;
+    left: -4px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .solutions {
+    margin: 0 -20px;
+  }
+  .solution {
+    margin: 25px 20px;
+  }
+  .solutions-nav {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+  }
+  .btn--solutions {
+    position: relative;
+    width: 190px;
+    margin: 0 auto;
+  }
+  .solution-arrows, .solutions .slick-dots {
+    flex-direction: row;
+  }
+  .solution-shape1 {
+    width: 230px;
+    height: 110px;
+    background-size: cover;
+    bottom: -75px;
+    left: -44px;
+  }
+  .solution-shape2 {
+    width: 230px;
+    height: 245px;
+    background-size: cover;
+    top: -88px;
+    right: -44px;
+  }
+  .solution__arrow--prev {
+    transform: rotate(0deg) scale(.8);
+    margin: 0 20px 0 0;
+  }
+  .solution__arrow--next {
+    transform: rotate(180deg) scale(.8);
+    margin: 0 0 0 20px;
+  }
+  .solutions-nav__numbers {
+    font-size: 14px;
+  }
+  .solution-current-slide {
+    font-size: 24px;
+  }
+  .solution__arrow::after {
+    width: 350px;
+  }
+  .arrow, .slider .slick-arrow {
+    border-color: rgb(126, 192, 164);
+    background: rgb(126, 192, 164);
+  }
+  .arrow::before, .slider .slick-arrow::before {
+    border-color: rgb(255, 255, 255);
+  }
+  .solution__btn {
+    width: 20px;
+    height: 20px;
+  }
+  .solution__slide_title {
+    font-size: 18px;
+  }
+  .solution__slide_text p {
+    font-size: 12px;
+  }
+  .solution__slides {
+    padding: 20px 15px;
+  }
+  .solution__slide_text {
+    padding: 0;
+  }
+  .sidebar-menu {
+    margin-bottom: 15px;
+  }
+  .sidebar-menu__link {
+    width: 50%;
+  }
+  .breadcrumbs__link {
+    font-size: 12px;
+  }
+  .breadcrumbs__link--home {
+    background-size: 12px 12px;
+  }
+  .breadcrumbs__link--home::after {
+    top: 1px;
+  }
+  .main {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  .breadcrumbs {
+    margin-bottom: 20px;
+  }
+  .content__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .rubric {
+    width: 33.333%;
+  }
+  .cart__btns {
+    display: none;
+  }
+  .sort__span {
+    display: none;
+  }
+  .filter-btn {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    background-position: 14px 11px;
+    background-size: 14px 14px;
+  }
+  .sort {
+    position: relative;
+    z-index: 10;
+    max-width: 170px;
+    height: 35px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #F9F9F9;
+  }
+  .sort.active .sort__item {
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  }
+  .sort__block {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sort__block::after {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #424242;
+    border-right: 1px solid #424242;
+    transform: rotate(135deg);
+    box-sizing: border-box;
+  }
+  .sort__item {
+    width: 100%;
+    display: block;
+    height: 35px;
+    padding-left: 15px;
+    line-height: 35px;
+    font-size: 12px;
+    margin: 0;
+    background: #F9F9F9;
+    border: none;
+  }
+  .sort__item.active,
+  .sort__item.active:hover {
+    order: -1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .sort.active {
+    overflow: visible;
+  }
+  .sort__item:hover {
+    color: rgb(66, 66, 66);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .filter-btn.active {
+    background-position: 16px 10px;
+    background-size: 16px 16px;
+  }
+  .item-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .item-counter {
+    width: 100%;
+    max-width: 160px;
+  }
+  .item__btn {
+    width: 100%;
+    max-width: 160px;
+    margin-top: 5px;
+  }
+  .item__link {
+    max-height: 1000px;
+  }
 
 
 

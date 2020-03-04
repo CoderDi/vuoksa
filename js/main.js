@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+  function appendFilter() {
+    console.log(window.innerWidth);
+    if (window.innerWidth <= 979) {
+      $("#filter").appendTo("#filter-mobile");
+    } else {
+      $("#filter").appendTo("#sidebar");
+    }
+  }
+  $(window).resize(function(){
+    appendFilter();
+  });
+  appendFilter();
+
   $(".js-call").click(function(){
     $(".popup-block").hide();
     $("#popup-call").show();
@@ -15,6 +28,11 @@ $(document).ready(function(){
   });
   $(".popup-bg").click(function(){
     $(".popup").removeClass("popup--show");
+  });
+
+  $(".js-filter-open").click(function(){
+    $(this).parents(".filter-mobile").find(".filter").toggleClass("active");
+    $(this).toggleClass("active");
   });
 
   $(".js-butter--desktop").click(function(){
@@ -50,6 +68,14 @@ $(document).ready(function(){
   $(".js-cart-close").click(function() {
     $(".cart").removeClass("cart--open");
     $(".cart__btn").removeClass("cart__btn--active");
+  });
+
+  $(".sort__item").click(function(){
+    $(".sort__item").removeClass("active");
+    $(this).addClass("active");
+  });
+  $(".js-sort").click(function(){
+    $(this).toggleClass("active");
   });
 
   $(".cart__btn").click(function(){

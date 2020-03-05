@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
   function appendFilter() {
-    console.log(window.innerWidth);
     if (window.innerWidth <= 979) {
       $("#filter").appendTo("#filter-mobile");
     } else {
@@ -141,10 +140,6 @@ $(document).ready(function(){
     $(this).parents(".filter__block").find(".filter__block_content").slideToggle(200);
   });
 
-  $(".toggle").click(function(){
-    $(this).toggleClass("toggle-left");
-  });
-
 
   /* SOLUTIONS */
   $(".solution__btn").click(function(){
@@ -190,6 +185,37 @@ $(document).ready(function(){
   }
   $(".solution-all-slides").text(allCountSolutions);
 
+  $(".solution .solution__items-slide").click(function(){
+    var path = $(this).find("img").attr("src");
+    $(this).parents(".solution__slide").find(".item__img img").attr("src", path);
+  });
+
+  // $(".article .solution__items-slide").click(function(){
+  //   var path = $(this).find("img").attr("src");
+  //   $(this).parents(".article-media").find(".article-media__img img").attr("src", path);
+  // });
+
+  $(".js-toggle").click(function(){
+    $(this).toggleClass("toggle-left");
+    if ($(this).hasClass("toggle-left")) {
+      $(".article-toggle__right").addClass("active");
+      $(".article-toggle__left").removeClass("active");
+    } else {
+      $(".article-toggle__left").addClass("active");
+      $(".article-toggle__right").removeClass("active");
+    }
+  });
+  $(".article-toggle__left").click(function(){
+    $(".article-toggle__right").removeClass("active");
+    $(this).addClass("active");
+    $(this).parents(".article-toggle").find(".toggle").removeClass("toggle-left");
+  });
+  $(".article-toggle__right").click(function(){
+    $(".article-toggle__left").removeClass("active");
+    $(this).addClass("active");
+    $(this).parents(".article-toggle").find(".toggle").addClass("toggle-left");
+  });
+
 
   
   $(".js-slider").slick({
@@ -198,7 +224,15 @@ $(document).ready(function(){
     autoplaySpeed: 6000,
     arrows: true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1170,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   });
 
 

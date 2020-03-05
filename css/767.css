@@ -328,8 +328,95 @@
     max-width: 160px;
     margin-top: 5px;
   }
+  .solution .item-bottom {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .solution .item-counter {
+    width: 48%;
+    max-width: 160px;
+  }
+  .solution .item__btn {
+    width: 48%;
+    max-width: 160px;
+    margin-top: 0px;
+  }
   .item__link {
     max-height: 1000px;
+  }
+  .slide .item {
+    margin: 10px 0;
+  }
+  .item__container:hover {
+    box-shadow: none;
+  }
+  .previously .section__title {
+    text-align: left;
+  }
+  .slider {
+    padding: 0;
+    margin: 0 -10px;
+  }
+  .slider .slick-arrow {
+    top: -50px;
+    left: auto;
+    right: 10px;
+  }
+  .slide {
+    padding: 0 10px;
+  }
+  .slider .slick-prev {
+    right: 41px;
+  }
+  .item-icon__hint {
+    display: none;
+  }
+  .popup-block {
+    width: 320px;
+    min-height: 0;
+  }
+  .popup-city__top {
+    padding: 30px 15px;
+    position: relative;
+  }
+  .popup-city__top > span {
+    margin-bottom: 15px;
+  }
+  .popup-city__top::before {
+    display: none;
+  }
+  .popup-city__top::after {
+    width: 180px;
+    height: 90px;
+    right: 0;
+    bottom: 0;
+    top: auto;
+  }
+  .city__default {
+    padding: 20px 15px 5px;
+  }
+  .city__default_item {
+    margin: 0 25px 15px 0;
+  }
+  .city__list_title {
+    margin: 20px 0;
+    padding-left: 15px;
+  }
+  .cities {
+    margin-right: 15px;
+    padding-left: 15px;
+  }
+  .city__list_block {
+    width: 100%;
+  }
+  .city__list_letter {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .city__item {
+    font-size: 12px;
+    /* margin-bottom: 5px; */
   }
 
 

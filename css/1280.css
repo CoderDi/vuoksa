@@ -279,8 +279,18 @@
   .item {
     width: 50%;
   }
+  .item--solution {
+    width: 290px;
+  }
   .rubric {
     width: 25%;
+  }
+  .cart {
+    width: 900px;
+    right: -900px;
+  }
+  .cart--open {
+    right: 0;
   }
 
 

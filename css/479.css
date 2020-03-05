@@ -63,7 +63,39 @@
   .btn-more {
     margin-bottom: 20px;
   }
+  .previously .section__title {
+    font-size: 20px;
+  }
 
+  .solution__slides {
+    padding: 20px 10px;
+    height: 385px;
+  }
+  .solution__slide_text {
+    max-height: 300px;
+  }
+  .item--solution {
+    height: 350px;
+    width: auto;
+    padding: 0;
+  }
+  .solution__items-slider {
+    max-height: 350px;
+    flex-shrink: 0;
+  }
+  .solution .item-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .solution .item-counter {
+    width: 100%;
+    max-width: 160px;
+  }
+  .solution .item__btn {
+    width: 100%;
+    max-width: 160px;
+    margin-top: 5px;
+  }
 
 
 

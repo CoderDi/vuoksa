@@ -908,6 +908,34 @@ body, html {
 .scrollable::-webkit-scrollbar{
   width: 4px;
 }
+
+.scroll-horizontal::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:0px;
+  height:5px
+} 
+.scroll-horizontal::-webkit-scrollbar-track {
+  background-color:#d8d8d8
+} 
+.scroll-horizontal::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color:#a5a5a5;
+} 
+.scroll-horizontal::-webkit-scrollbar-thumb:hover{
+  background-color:#a5a5a5;
+} 
+.scroll-horizontal::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:0px;
+  height:4px
+} 
+.scroll-horizontal::-webkit-scrollbar{
+  height: 4px;
+}
+
 .city__list_title {
   display: block;
   margin-top: 30px;
@@ -2649,6 +2677,7 @@ SOLUTION
   border-radius: 60px;
   cursor: pointer;
   overflow: hidden;
+  margin: 0 20px;
 }
 .toggle .knobs::after {
   width: 6px;
@@ -2662,9 +2691,6 @@ SOLUTION
   border-bottom: 1px solid #828282;
   transform: rotate(225deg);
 }
-.checkbox {
-  display: none;
-}
 .toggle .knobs::before {
   position: absolute;
   content: '';
@@ -2676,24 +2702,42 @@ SOLUTION
   border-radius: 50%;
   transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
 }
-.toggle .checkbox:active + .knobs:before {
+.toggle.toggle-left:active  .knobs:before {
     width: 40px;
     border-radius: 100px;
 } 
-.toggle .checkbox:checked:active + .knobs:before {
+.toggle.toggle-left:active .knobs:before {
     margin-left: -26px;
 }
-.toggle .checkbox:checked + .knobs:before {
+.toggle.toggle-left .knobs:before {
     left: 33px;
     background-color: #7EC0A4;
 }
-.toggle .checkbox:checked + .knobs:after {
+.toggle.toggle-left .knobs:after {
   left: 6px;
   transform: rotate(45deg);
+}
+.article-toggle {
+  padding: 20px 0 0 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.article-toggle__text {
+  font-size: 12px;
+  line-height: 130%;
+  padding-bottom: 5px;
+  color: #424242;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+.article-toggle__text.active {
+  border-color: #7EC0A4
 }
 
 .article-top {
   display: flex;
+  margin-bottom: 40px;
 }
 .article-media {
   width: 520px;
@@ -2837,6 +2881,34 @@ SOLUTION
   left: 29px;
   top: 20px;
 }
+.article-media__slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: auto;
+  height: 100px;
+}
+.article .solution__items-slide {
+  flex-shrink: 0;
+  margin: 0 17px 0 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1440px) {

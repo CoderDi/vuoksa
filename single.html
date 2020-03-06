@@ -42,6 +42,9 @@
                   <span class="item-icon__hint">Сравнить</span>
                 </div>
               </div>
+
+              <span class="arrow article-media-arrow article-media-arrow-prev js-media-prev"></span>
+              <span class="arrow article-media-arrow article-media-arrow-prev js-media-next"></span>
             </div>
 
 
@@ -54,7 +57,19 @@
             </div>
             
 
-            <div class="article-media__slider scroll-horizontal">
+            <div class="article-media__slider scroll-horizontal active" id="ams-photo">
+              <div class="solution__items-slide active"><img src="images/item1.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item2.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item3.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item5.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item9.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item6.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item7.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item8.jpg" alt=""></div>
+              <div class="solution__items-slide"><img src="images/item9.jpg" alt=""></div>
+            </div>
+
+            <div class="article-media__slider scroll-horizontal" id="ams-tovar">
               <div class="solution__items-slide active"><img src="images/item1.jpg" alt=""></div>
               <div class="solution__items-slide"><img src="images/item2.jpg" alt=""></div>
               <div class="solution__items-slide"><img src="images/item3.jpg" alt=""></div>
@@ -72,7 +87,8 @@
               «голубая мята» костюмный </h1>
             
             <div class="article-description__flex">
-              <div class="article-meta">
+              <div class="article-meta">                
+                <span class="artikul">Артикул: № 257416</span>
                 <span class="article-status article-status-no">Скоро будет</span>
                 <span class="article-status article-status-yes">В наличии (100 м)</span>
 
@@ -109,9 +125,8 @@
 
               </div>
 
-              <div class="article-tth">
-                <span class="artikul">Артикул: № 257416</span>
-                <div class="tth-list">
+              <div class="article-tth" id="tth-list">
+                <div class="tth-list" id="tth">
                   <div class="tth-item">
                     <span class="tth-name">
                       Производитель
@@ -176,20 +191,26 @@
         </div>
 
         <div class="tabs">
-          <input id="tab1" type="radio" name="tabs" checked>
-          <label for="tab1" title="Описание" class="tabs-label">Описание</label>
-       
-          <input id="tab2" type="radio" name="tabs">
-          <label for="tab2" title="доставка" class="tabs-label">доставка</label>
+          <input id="tab1" type="radio" name="tabs" checked class="hidden lg-visible">
+          <label for="tab1" title="Описание" class="tabs-label hidden lg-visible">Характеристики</label>
+          
+          <input id="tab2" type="radio" name="tabs" checked>
+          <label for="tab2" title="Описание" class="tabs-label">Описание</label>
        
           <input id="tab3" type="radio" name="tabs">
-          <label for="tab3" title="оплата" class="tabs-label">оплата</label>
+          <label for="tab3" title="доставка" class="tabs-label">доставка</label>
        
           <input id="tab4" type="radio" name="tabs">
-          <label for="tab4" title="уход за тканью" class="tabs-label">уход за тканью</label>
+          <label for="tab4" title="оплата" class="tabs-label">оплата</label>
+       
+          <input id="tab5" type="radio" name="tabs">
+          <label for="tab5" title="уход за тканью" class="tabs-label">уход за тканью</label>
           <div class="tabs-line"></div>
        
-          <section id="content-tab1" class="tabs-section">
+          <section id="content-tab1" class="tabs-section hidden lg-visible">
+                        
+          </section>  
+          <section id="content-tab2" class="tabs-section">
             <div class="tabs-section__flex">
               <div class="tabs-section__block">
                 <p>Ткань лён умягченный "голубая мята" костюмный с принтом однотон производства: Оршанский льнокомбинат (Белоруссия), плотностью 200 гр/м2 и шириной 150 см. Cостав: лён 100%. Цвет ткани: голубой</p>
@@ -207,17 +228,17 @@
                   <li>Не колется, приятна к телу</li>
                 </ul>
               </div>
-            </div>            
-          </section>  
-          <section id="content-tab2" class="tabs-section">
-            2
+            </div>
           </section> 
           <section id="content-tab3" class="tabs-section">
             3
           </section> 
           <section id="content-tab4" class="tabs-section">
             4
-          </section>    
+          </section> 
+          <section id="content-tab5" class="tabs-section">
+            5
+          </section>   
         </div>  
       </article>
 

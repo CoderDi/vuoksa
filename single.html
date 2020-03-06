@@ -5,10 +5,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="libs/slick/slick.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body id="top">
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__wrapper flex">
+        <a href="" class="logo">
+          <img src="images/icons.svg#logo-dark" alt="">
+        </a>
+
+        <div class="header-content">
+          <div class="header-top flex">
+            <div class="header-top__block lg-hidden flex">
+              <div class="city js-city-change">
+                <span>Санкт-Петербург</span>
+              </div>
+              <a href="" class="header-top__link">Контакты</a>
+              <a href="" class="header-top__link">Доставка</a>
+            </div>
+
+            <div class="header-top__block flex">
+              <a href="" class="phone phone--header">8 (800) 934 12 45</a>
+              <button class="btn btn--border btn--header lg-hidden js-call">Заказать звонок</button>
+            </div>
+          </div>
+
+          <nav class="header-menu scrollable flex" id="menu">
+            <div class="menu-top hidden lg-visible">
+              <div class="city js-city-change">
+                <span>Санкт-Петербург</span>
+              </div>
+              <i class="menu-close js-menu-close"></i>
+            </div>
+
+            <div class="menu-catalog">
+              <div class="menu-catalog__title flex hidden lg-visible js-menu-catalog-open">
+                <span>Каталог</span>
+                <i></i>
+              </div>
+              <ul class="menu-desktop flex">
+                <li class="menu-desktop__item"><a href="">Ткани</a></li>
+                <li class="menu-desktop__item"><a href="">Домашний текстиль</a></li>
+                <li class="menu-desktop__item"><a href="">Декор интерьера</a></li>
+                <li class="menu-desktop__item"><a href="">Подарочные наборы</a></li>
+                <li class="menu-desktop__item menu-desktop__item--sale"><a href="">Акции</a></li>
+              </ul>
+            </div>
+
+            <div class="menu-collapse-icons lg-hidden flex">
+              <div class="icon icon--search js-search-open"></div>
+              <div class="icon icon--login"></div>
+              <div class="icon icon--butter js-butter--desktop"><i></i></div>
+            </div>
+
+            <div class="menu-collapse">
+              <ul class="menu-collapse__list">
+                <li class="menu-collapse__item menu-collapse__item--about"><a href="">О нас</a></li>
+                <li class="menu-collapse__item menu-collapse__item--garant"><a href="">Гарантии</a></li>
+                <li class="menu-collapse__item menu-collapse__item--wie"><a href="">Как купить</a></li>
+                <li class="menu-collapse__item menu-collapse__item--curve"><a href="">Возврат и обмен</a></li>
+                <li class="menu-collapse__item menu-collapse__item--pay"><a href="">Оплата</a></li>
+                <li class="menu-collapse__item menu-collapse__item--deliv hidden lg-visible"><a href="">Доставка</a></li>
+                <li class="menu-collapse__item menu-collapse__item--opt"><a href="">Оптовые продажи</a></li>
+                <li class="menu-collapse__item menu-collapse__item--reviews"><a href="">Отзывы на Яндекс Маркете</a></li>
+                <li class="menu-collapse__item menu-collapse__item--faq"><a href="">Частые вопросы</a></li>
+                <li class="menu-collapse__item menu-collapse__item--contacts hidden lg-visible"><a href="">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="menu-collapse__footer hidden lg-visible">
+              <a href="" class="logo logo--menu">
+                <img src="images/icons.svg#logo-dark" alt="">
+              </a>
+              <a href="" class="phone phone--menu">8 (800) 934 12 45</a>
+              <button class="btn btn--border btn--header btn--menu js-call">Заказать звонок</button>
+            </div>
+            
+          </nav>
+        </div>
+
+        <div class="header-mobile-btns hidden lg-visible">
+          <div class="icon icon--mobile icon--search sm-hidden js-search-open"></div>
+          <div class="icon icon--mobile icon--login sm-hidden"></div>
+          <div class="icon icon--mobile icon--butter js-butter--mobile"><i></i></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <main class="main">
     <div class="wrapper">
 
@@ -21,12 +106,36 @@
 
       <article class="article">
         <div class="article-top">
+          <div class="article__title hidden sm-visible" id="article-title-mobile"></div>
           <div class="article-media">
             <div class="article-media__img-block">
-              <div class="article-media__img">
-                <img src="images/article.jpg" alt="">
-                <span class="article-media__img--popup-open"></span>
+              <div class="article-big-slider js-media-for-slider">
+                <div class="article-media__img">
+                  <img src="images/article.jpg" alt="">
+                  <span class="article-media__img--popup-open"></span>
+                </div>
+
+                <div class="article-media__img">
+                  <img data-lazy="images/article.jpg" alt="">
+                  <span class="article-media__img--popup-open"></span>
+                </div>
+
+                <div class="article-media__img">
+                  <img data-lazy="images/article.jpg" alt="">
+                  <span class="article-media__img--popup-open"></span>
+                </div>
+
+                <div class="article-media__img">
+                  <img data-lazy="images/article.jpg" alt="">
+                  <span class="article-media__img--popup-open"></span>
+                </div>
+
+                <div class="article-media__img">
+                  <img data-lazy="images/article.jpg" alt="">
+                  <span class="article-media__img--popup-open"></span>
+                </div>
               </div>
+              
               <div class="article-media__labels">
                 <span class="article-media__label item-label item-label--new">Новинка</span>
                 <span class="article-media__label item-label item-label--sale">Скидка </span>
@@ -57,51 +166,44 @@
             </div>
             
 
-            <div class="article-media__slider scroll-horizontal active" id="ams-photo">
-              <div class="solution__items-slide active"><img src="images/item1.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item2.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item3.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item5.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item9.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item6.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item7.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item8.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item9.jpg" alt=""></div>
-            </div>
-
-            <div class="article-media__slider scroll-horizontal" id="ams-tovar">
-              <div class="solution__items-slide active"><img src="images/item1.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item2.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item3.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item5.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item9.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item6.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item7.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item8.jpg" alt=""></div>
-              <div class="solution__items-slide"><img src="images/item9.jpg" alt=""></div>
+            <div class="article-media__slider scroll-horizontal js-media-nav-slider" id="ams-photo">
+              <div class="article-nav-slide"><img src="images/item1.jpg" alt=""></div>
+              <div class="article-nav-slide"><img src="images/item2.jpg" alt=""></div>
+              <div class="article-nav-slide"><img src="images/item3.jpg" alt=""></div>
+              <div class="article-nav-slide"><img src="images/item3.jpg" alt=""></div>
+              <div class="article-nav-slide"><img src="images/item3.jpg" alt=""></div>
+              
             </div>
           </div>
 
           <div class="article-description">
-            <h1 class="article__title">Ткань лен умягченный 
+            <h1 class="article__title sm-hidden" id="article-title-desktop">Ткань лен умягченный 
               «голубая мята» костюмный </h1>
             
             <div class="article-description__flex">
               <div class="article-meta">                
-                <span class="artikul">Артикул: № 257416</span>
-                <span class="article-status article-status-no">Скоро будет</span>
-                <span class="article-status article-status-yes">В наличии (100 м)</span>
+                <div class="mobile-flex">
+                  <div>
+                    <span class="artikul">Артикул: № 257416</span>
+                    <span class="article-status article-status-no">Скоро будет</span>
+                    <span class="article-status article-status-yes">В наличии (100 м)</span>
+                  </div>
+                  
+                  <span class="article-price"><strong>110</strong> руб./м</span>
 
-                <span class="article-price"><strong>110</strong> руб./м</span>
-
-                <div class="counter article-counter" data-step="0.1">
-                  <i class="counter-btn counter-minus"></i>
-                  <input class="counter-value" value="4.1">
-                  <i class="counter-btn counter-plus"></i>
                 </div>
 
-                <span class="article-over-price">Общая стоимость: <strong>451 руб.</strong></span>
+                <div class="mobile-flex">
+                  <div class="counter article-counter" data-step="0.1">
+                    <i class="counter-btn counter-minus"></i>
+                    <input class="counter-value" value="4.1">
+                    <i class="counter-btn counter-plus"></i>
+                  </div>
 
+                  <span class="article-over-price">Общая стоимость: <strong>451 руб.</strong></span>
+
+                </div>
+                
                 <span class="btn btn--full item__btn item__btn--cart js-cart-add article__btn">
                   <i></i>
                   <span class="item__btn_price"> В корзину</span>
@@ -208,36 +310,47 @@
           <div class="tabs-line"></div>
        
           <section id="content-tab1" class="tabs-section hidden lg-visible">
-                        
+            <span class="tabs-section-title hidden sm-visible">Характеристики</span>
+            <div class="tabs-section__blocks">
+
+            </div>
           </section>  
+
           <section id="content-tab2" class="tabs-section">
-            <div class="tabs-section__flex">
-              <div class="tabs-section__block">
-                <p>Ткань лён умягченный "голубая мята" костюмный с принтом однотон производства: Оршанский льнокомбинат (Белоруссия), плотностью 200 гр/м2 и шириной 150 см. Cостав: лён 100%. Цвет ткани: голубой</p>
-                <p>Ткань подойдет для пошива одежды, а также домашнего текстиля.</p>
-                <h3>Ткань подойдет для пошива одежды, а также домашнего текстиля.</h3>
-                <p>Ткани режем от 10 см. (минимальный отрез 10 см.) Цена в описании товара указана за 1 метр. Вы можете выбрать необходимое количество ткани, при этом ширина шага составляет 10 см. Ткань будет отрезана единым метражом, цельным отрезом.</p>
-              </div>
-              <div class="tabs-section__block">
-                <h3>Информация о товаре</h3>
-                <ul>
-                  <li>Ткань дает минимальную усадку (до 3%).</li>
-                  <li>Сминаемость повышенная</li>
-                  <li>Полотно гладкорашенное</li>
-                  <li>Ткань химическим и механическим способом умягчена на производстве</li>
-                  <li>Не колется, приятна к телу</li>
-                </ul>
+            <span class="tabs-section-title hidden sm-visible">Описание</span>
+
+            <div class="tabs-section__blocks">
+              <div class="tabs-section__flex">
+                <div class="tabs-section__block">
+                  <p>Ткань лён умягченный "голубая мята" костюмный с принтом однотон производства: Оршанский льнокомбинат (Белоруссия), плотностью 200 гр/м2 и шириной 150 см. Cостав: лён 100%. Цвет ткани: голубой</p>
+                  <p>Ткань подойдет для пошива одежды, а также домашнего текстиля.</p>
+                  <h3>Ткань подойдет для пошива одежды, а также домашнего текстиля.</h3>
+                  <p>Ткани режем от 10 см. (минимальный отрез 10 см.) Цена в описании товара указана за 1 метр. Вы можете выбрать необходимое количество ткани, при этом ширина шага составляет 10 см. Ткань будет отрезана единым метражом, цельным отрезом.</p>
+                </div>
+                <div class="tabs-section__block">
+                  <h3>Информация о товаре</h3>
+                  <ul>
+                    <li>Ткань дает минимальную усадку (до 3%).</li>
+                    <li>Сминаемость повышенная</li>
+                    <li>Полотно гладкорашенное</li>
+                    <li>Ткань химическим и механическим способом умягчена на производстве</li>
+                    <li>Не колется, приятна к телу</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </section> 
           <section id="content-tab3" class="tabs-section">
-            3
+            <span class="tabs-section-title hidden sm-visible">Доставка</span>
+            <div class="tabs-section__blocks">3</div>
           </section> 
           <section id="content-tab4" class="tabs-section">
-            4
+            <span class="tabs-section-title hidden sm-visible">Оплата</span>
+            <div class="tabs-section__blocks">4</div>
           </section> 
           <section id="content-tab5" class="tabs-section">
-            5
+            <span class="tabs-section-title hidden sm-visible">Уход за тканью</span>
+            <div class="tabs-section__blocks">5</div>
           </section>   
         </div>  
       </article>
@@ -516,8 +629,62 @@
     </div>
   </section>
 
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer-top">
+        <div class="footer__logo">
+          <a href="" class="logo--footer"><img src="images/icons.svg#logo-white" alt=""></a>
+          <div class="socials">
+            <a href="" class="socials__link socials__link--vk"></a>
+            <a href="" class="socials__link socials__link--fb"></a>
+            <a href="" class="socials__link socials__link--ig"></a>
+          </div>
+        </div>
+
+        <div class="footer__menu">
+          <span class="footer__menu_title hidden sm-visible js-footer-menu-open">Каталог</span>
+          <ul class="footer__menu_list">
+            <li class="footer__menu_item"><a href="">Ткани</a></li>
+            <li class="footer__menu_item"><a href="">Домашний текстиль</a></li>
+            <li class="footer__menu_item"><a href="">Декор интерьера</a></li>
+            <li class="footer__menu_item"><a href="">Подарочные наборы</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__menu">
+          <span class="footer__menu_title hidden sm-visible js-footer-menu-open">О компании</span>
+          <ul class="footer__menu_list">
+            <li class="footer__menu_item"><a href="">О нас</a></li>
+            <li class="footer__menu_item"><a href="">Контакты</a></li>
+            <li class="footer__menu_item"><a href="">Оплата</a></li>
+            <li class="footer__menu_item"><a href="">Доставка</a></li>
+          </ul>
+        </div>
+        
+
+        <div class="footer__pay">
+          <span class="footer__pay_title">Мы принимаем к оплате</span>
+          <div class="footer__pay_items">
+            <span class="footer__pay_item footer__pay_item--mastercard"></span>
+            <span class="footer__pay_item footer__pay_item--visa"></span>
+            <span class="footer__pay_item footer__pay_item--mir"></span>
+            <span class="footer__pay_item footer__pay_item--paypal"></span>
+            <span class="footer__pay_item footer__pay_item--yandex"></span>
+            <span class="footer__pay_item footer__pay_item--qiwi"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="copyright">2020 © Вуокса</span>
+      </div>
+
+      <a href="#top" class="up"><i></i></a>
+    </div>
+  </footer>
+
   <div class="cart">
-    <div class="cart__btns js-cart-open">
+    <div class="cart__btns js-cart-open sm-hidden">
       <div class="cart__btn cart__btn--cart">
         <span class="cart__btn_count">2</span>
       </div>
@@ -533,7 +700,7 @@
       <strong class="cart-top__title">КОРЗИНА</strong>
       <div class="cart-tabs">
         <span class="cart-tab-link cart-tab-link--active cart-ready-link">Готовые к заказу (<span class="js-ready-count">2</span>)</span>
-        <span class="cart-tab-link cart-wish-link">Отложенные (<span class="js-wish-count">2</span>)</span>
+        <span class="cart-tab-link cart-wish-link">Отложенные (<span class="js-wihs-count">2</span>)</span>
       </div>
       <div class="cart-clear__btn"><i></i>Очистить</div>
     </div>
@@ -580,7 +747,7 @@
               <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
             </div>
             <div class="cart-table__col5">
-              <span class="wish-heart js-wish-add"></span>
+              <span class="wish-heart"></span>
             </div>
           </div>
 
@@ -609,7 +776,7 @@
               <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
             </div>
             <div class="cart-table__col5">
-              <span class="wish-heart js-wish-add"></span>
+              <span class="wish-heart"></span>
             </div>
           </div>
 
@@ -635,7 +802,7 @@
               <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
             </div>
             <div class="cart-table__col5">
-              <span class="wish-heart js-wish-add"></span>
+              <span class="wish-heart"></span>
             </div>
           </div>
 
@@ -661,7 +828,7 @@
               <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
             </div>
             <div class="cart-table__col5">
-              <span class="wish-heart js-wish-add"></span>
+              <span class="wish-heart"></span>
             </div>
           </div>
 
@@ -687,7 +854,7 @@
               <span class="cart-table__price cart-item-price-full"><strong>450</strong> руб</span>
             </div>
             <div class="cart-table__col5">
-              <span class="wish-heart js-wish-add"></span>
+              <span class="wish-heart"></span>
             </div>
           </div>
         </div>
@@ -778,7 +945,19 @@
     </div>
   </div>
 
-  <!-- <a href="#top" class="up"><i></i></a> -->
+  <div class="bottom-menu hidden xs-visible">
+    <div class="bottom-menu__btn bottom-menu__btn--search js-search-open"></div>
+    <div class="bottom-menu__btn bottom-menu__btn--compare">
+      <span>4</span>
+    </div>
+    <div class="bottom-menu__btn bottom-menu__btn--wish">
+      <span>4</span>
+    </div>
+    <div class="bottom-menu__btn bottom-menu__btn--cart">
+      <span>4</span>
+    </div>
+    <div class="bottom-menu__btn bottom-menu__btn--login"></div>
+  </div>
 
   <div class="popup">
     <a class="popup-bg"></a>
@@ -946,7 +1125,6 @@
 
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>
-  <script src="js/maskedinput.js"></script>
   <script src="libs/nouislider/nouislider.min.js"></script>
   <script src="js/main.js"></script>
 </body>

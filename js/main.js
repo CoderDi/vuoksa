@@ -33,6 +33,15 @@ $.fn.setCursorPosition = function(pos) {
   });
 
 
+  if (window.innerWidth >= 767) {
+    $(".article-media__img img").imagezoomsl({	  
+      zoomrange: [1, 2],
+      zoomstart: 2,
+      innerzoom: true,
+      magnifierborder: "none"		 
+  });
+  }
+
 
 
 $(document).ready(function(){
@@ -61,6 +70,11 @@ $(document).ready(function(){
   $(".js-call").click(function(){
     $(".popup-block").hide();
     $("#popup-call").show();
+    $(".popup").addClass("popup--show");
+  });
+  $(".js-post").click(function(){
+    $(".popup-block").hide();
+    $("#popup-post").show();
     $(".popup").addClass("popup--show");
   });
   $(".js-city-change").click(function(){

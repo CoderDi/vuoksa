@@ -111,7 +111,12 @@
             <div class="article-media__img-block">
               <div class="article-big-slider js-media-for-slider">
                 <div class="article-media__img">
-                  <img src="images/article.jpg" alt="">
+                  <img src="images/article.jpg" data-large="images/article.jpg">
+                  <span class="article-media__img--popup-open"></span>
+                </div>
+
+                <div class="article-media__img">
+                  <img data-lazy="images/article2.jpg" alt="">
                   <span class="article-media__img--popup-open"></span>
                 </div>
 
@@ -121,12 +126,7 @@
                 </div>
 
                 <div class="article-media__img">
-                  <img data-lazy="images/article.jpg" alt="">
-                  <span class="article-media__img--popup-open"></span>
-                </div>
-
-                <div class="article-media__img">
-                  <img data-lazy="images/article.jpg" alt="">
+                  <img data-lazy="images/article2.jpg" alt="">
                   <span class="article-media__img--popup-open"></span>
                 </div>
 
@@ -214,7 +214,7 @@
                   <span class="item__btn_price">Оформить предзаказ</span>
                 </span>
 
-                <span class="article-alert"><span>Cообщить о поступлении</span></span>
+                <span class="article-alert js-post"><span>Cообщить о поступлении</span></span>
 
                 <div class="article-bonus">
                   <div class="article-bonus__item article-bonus__item--aeroflot">
@@ -981,6 +981,23 @@
         </div>
       </div>
 
+      <div class="popup-block popup-block-call" id="popup-post">
+        <div class="popup-block__title">
+          <span>Сообщить о поступлении</span>
+        </div>
+        <div class="popup-block__content">
+          <form class="popup-form">
+            <label class="label label--required label--popup">
+              <input type="text" class="input input--popup" placeholder="Представьтесь" required>
+            </label>
+            <label class="label label--required label--popup">
+              <input type="tel" class="input input--popup" placeholder="Телефон" required>
+            </label>
+            <button type="submit" class="btn btn--full submit">Отправить данные</button>
+          </form>
+        </div>
+      </div>
+
       <div class="popup-block popup-block-success" id="popup-success">
         <div class="popup-block__title">
           <span>Спасибо за заявку!</span>
@@ -1123,9 +1140,10 @@
     </div>
   </div> 
 
-  <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+  <script src="libs/jquery/jquery-1.8.3.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>
   <script src="libs/nouislider/nouislider.min.js"></script>
+  <script src="libs/zoom/zoomsl-3.0.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

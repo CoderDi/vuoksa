@@ -97,7 +97,13 @@
     </header>
 
     <div class="banner">
-      <div class="banner__media"><img src="images/banner.jpg" alt=""></div>
+      <div class="banner__media">
+        <!-- <img src="images/banner.jpg" alt=""> -->
+        <video width="100%" height="auto" preload="metadata" autoplay="autoplay" loop="loop" poster="images/banner.jpg">
+          <source src="images/bg-video-720.mp4" type="video/mp4"></source>
+          <source src="images/bg-video-720.webm" type="video/webm"></source>
+      </video>
+      </div>
       <h1 class="banner__title">Дизайнерские решения для вашего дома</h1>
     </div>
   </section>
@@ -1252,9 +1258,10 @@
     </div>
   </div> 
 
-  <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+  <script src="libs/jquery/jquery-1.8.3.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>
   <script src="libs/nouislider/nouislider.min.js"></script>
+  <script src="libs/zoom/zoomsl-3.0.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

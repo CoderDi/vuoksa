@@ -2640,7 +2640,7 @@ SOLUTION
 #tab2:checked~#content-tab2, 
 #tab3:checked~#content-tab3, 
 #tab4:checked~#content-tab4,
-#tab5:checked~#content-tab4 {
+#tab5:checked~#content-tab5 {
 	display: block;
 }
 .tabs-line {

@@ -3097,6 +3097,10 @@ SOLUTION
   /* height: 100px; */
 
 }
+#ams-tovar,
+#tovar-big-slider {
+  display: none;
+}
 .article .solution__items-slide {
   flex-shrink: 0;
   margin: 0 17px 0 0 ;

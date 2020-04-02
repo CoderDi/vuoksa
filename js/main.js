@@ -33,18 +33,23 @@ $.fn.setCursorPosition = function(pos) {
   });
 
 
-  // if (window.innerWidth >= 767) {
-  //   $(".article-media__img img").imagezoomsl({	  
-  //     zoomrange: [1, 2],
-  //     zoomstart: 2,
-  //     innerzoom: true,
-  //     magnifierborder: "none"		 
-  // });
-  // }
+  
+  
 
 
 
 $(document).ready(function(){
+  function zoom() {
+    if (window.innerWidth >= 767) {
+    $(".article-media__img img").imagezoomsl({	  
+      zoomrange: [1, 2],
+      zoomstart: 2,
+      innerzoom: true,
+      magnifierborder: "none"		 
+    });
+    }
+  }
+  zoom();
 
   function appendFilter() {
     if (window.innerWidth <= 979) {
@@ -273,6 +278,8 @@ $(document).ready(function(){
       $("#tovar-big-slider").show();
       $('.js-media-for-slider2').slick('setPosition');
       $('.js-media-nav-slider2').slick('setPosition');
+      $(".tovar-arrow").show();
+      $(".photo-arrow").hide();
     } else {
       $(".article-toggle__left").addClass("active");
       $(".article-toggle__right").removeClass("active");
@@ -280,7 +287,10 @@ $(document).ready(function(){
       $("#photo-big-slider").show();
       $('.js-media-for-slider1').slick('setPosition');
       $('.js-media-nav-slider1').slick('setPosition');
+      $(".tovar-arrow").hide();
+      $(".photo-arrow").show();
     }
+    zoom();
   });
   $(".article-toggle__left").click(function(){
     $(".article-toggle__right").removeClass("active");
@@ -292,6 +302,9 @@ $(document).ready(function(){
     $("#photo-big-slider").show();
     $('.js-media-for-slider1').slick('setPosition');
     $('.js-media-nav-slider1').slick('setPosition');
+    $(".tovar-arrow").hide();
+      $(".photo-arrow").show();
+      zoom();
   });
   $(".article-toggle__right").click(function(){
     $(".article-toggle__left").removeClass("active");
@@ -303,6 +316,9 @@ $(document).ready(function(){
     $("#tovar-big-slider").show();
     $('.js-media-for-slider2').slick('setPosition');
     $('.js-media-nav-slider2').slick('setPosition');
+    $(".tovar-arrow").show();
+      $(".photo-arrow").hide();
+      zoom();
   });
 
 
@@ -365,6 +381,13 @@ $(document).ready(function(){
   });
   $(".js-media-next").click(function(){
     $('.js-media-nav-slider').slick("slickNext");
+  });
+
+  $(".js-media-prev2").click(function(){
+    $('.js-media-nav-slider2').slick("slickPrev");
+  });
+  $(".js-media-next2").click(function(){
+    $('.js-media-nav-slider2').slick("slickNext");
   });
 
   
